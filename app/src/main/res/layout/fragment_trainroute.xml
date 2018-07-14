@@ -14,7 +14,7 @@
     <Button
         android:id="@+id/button"
         android:background="@android:drawable/ic_menu_search"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorYellow"
         android:layout_alignTop="@+id/editText"
         android:layout_toRightOf="@+id/editText"
         android:layout_toEndOf="@+id/editText"
@@ -27,11 +27,11 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
+        android:textStyle="italic"
         android:maxLength="5"
         android:hint="Enter Train No."
         android:fontFamily="sans-serif-condensed"
         android:textSize="20dp"
-        android:textStyle="italic"
         android:id="@+id/editText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

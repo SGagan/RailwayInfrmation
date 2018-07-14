@@ -48,40 +48,29 @@ public class Main2Activity extends AppCompatActivity
         }
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.main2, menu);
-//        return true;
-//    }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment=null;
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_route) {
-           fragment = new RouteFragment();
+           fragment = new TrainRouteFragment();
         } else if (id == R.id.nav_pnr) {
-            fragment = new PnrFragment();
+            fragment = new PnrStatusFragment();
 
+        }
+        else if(id == R.id.nav_station){
+            fragment=new StationNameToCodeFragment();
+        }
+        else if(id == R.id.nav_status){
+            fragment=new LiveTrainStatusFragment();
+        }
+        else if(id == R.id.nav_name){
+            fragment=new RouteFragment();
         }
 if(fragment!=null){
     FragmentManager fragmentManager=getSupportFragmentManager();

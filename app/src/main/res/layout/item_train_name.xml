@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBack"
+    tools:context="com.example.gagan.railway.TrainNameActivity">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        android:elevation="60dp"
+        card_view:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="60dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/stationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Train Name: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mStationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/stationName"
+                android:hint="t name"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/stationName" />
+
+            <TextView
+                android:id="@+id/stationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stationName"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Train Number: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mStationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/stationCode"
+                android:layout_below="@+id/mStationName"
+                android:hint="t number"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/stationName" />
+            <TextView
+                android:id="@+id/Longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stationCode"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Day"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/mLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/Longitude"
+                android:layout_below="@+id/mStationCode"
+                android:hint="day"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/Longitude" />
+            <TextView
+                android:id="@+id/Latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Longitude"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Runs: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/mLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/Latitude"
+                android:layout_below="@+id/mLongitude"
+                android:hint="runs"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/Latitude" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

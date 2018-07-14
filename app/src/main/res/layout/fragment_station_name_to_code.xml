@@ -8,13 +8,13 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".Display"
+    tools:context=".Display2"
     android:background="@drawable/gradient_background2">
 
     <Button
         android:id="@+id/button"
         android:background="@android:drawable/ic_menu_search"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorYellow"
         android:layout_alignTop="@+id/editText"
         android:layout_toRightOf="@+id/editText"
         android:layout_toEndOf="@+id/editText"
@@ -25,13 +25,12 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="text"
         android:ems="10"
-        android:maxLength="5"
-        android:hint="Enter Train No."
+        android:textStyle="italic"
+        android:hint="Enter Station Name"
         android:fontFamily="sans-serif-condensed"
         android:textSize="20dp"
-        android:textStyle="italic"
         android:id="@+id/editText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
